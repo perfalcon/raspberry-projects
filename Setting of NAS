@@ -1,0 +1,24 @@
+
+
+Steps followed ... will add the detailed description
+
+I have started with my already FAT32 formatted Western Digital 1TB Passport.
+
+Step 1:
+	sudo apt-get update
+	sudo apt-get install exfat-fuse exfat-utils  (Mount the exFat drive ( have to get the cmd))
+	 
+Step 2:   
+	Create the folder
+	Mkdir /home/pi/media/shares/passG
+	sudo mount -t auto /dev/sdb2 ~/media/shares/passG
+Step 3:
+  Add your shares in this file . ( will provide the snippets for configuring a share)
+	sudo vi /etc/samba/smb.conf
+Step 4:
+	sudo /etc/init.d/samba restart ( do this if u make any changes to samba conf)
+Step 5:
+  Access the shares over the network.
+Step 6:
+  To check the status of samba status ( this displays currently actively used shares, not the available shares).
+  sudo /usr/bin/smbstatus
