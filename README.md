@@ -1,5 +1,1 @@
-# raspberry-projects
-All my Raspberry Projects
-
-
-Setup NAS.
+# raspberry-projectsAll my Raspberry Projects[Setup NAS](https://github.com/perfalcon/raspberry-projects/blob/master/Setting%20of%20up%20of%20NAS) 
